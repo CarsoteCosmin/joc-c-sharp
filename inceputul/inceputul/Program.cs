@@ -32,7 +32,7 @@ namespace Joc_in_c_sharp
                 {
                     Console.WriteLine("Ok you have {0}$, how much do you want to bet?", money);
                     int bet = Convert.ToInt32(Console.ReadLine());                   
-                    while (bet > money && bet > 0)
+                    while (bet > money || bet < 0)
                     {
                             Console.WriteLine("You dont have enough money...try again.");
                             bet = Convert.ToInt32(Console.ReadLine());           
